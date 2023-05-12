@@ -6,11 +6,13 @@ My first GitHub repository for learning Git and GitHub.
 
 Git is a free and open source distributed version control system.
 
-### Install Git for Windows
+### Git Installation and Setup
+
+#### Download and install Git for Windows
 
 Download Git for Windows at [git-scm.com](https://git-scm.com/download/win) or use a [mirror](https://registry.npmmirror.com/binary.html?path=git-for-windows/). 
 
-### First-Time Git Setup
+#### First-time Git setup
 
 Set your identity once you have installed Git use
 ``` 
@@ -61,3 +63,5 @@ See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2) for more Git basic
 - working with remotes
 - tagging
 - Git aliases
+
+### Git Branching
