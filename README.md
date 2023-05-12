@@ -19,7 +19,9 @@ git config --global user.email "YourUserEmail"
 ```
 Every Git commit uses this information. You can used the username and useremail related to your GitHub account to setup the Git identity.
 
-### Create a Git repository
+### Local Git Options
+
+#### Create a Git repository
 
 Change a directory into a Git repository by the following commands:
 ```
@@ -32,7 +34,7 @@ ls -ah
 ```
 to check it exists. 
 
-### Tracking files
+#### Tracking files
 
 Now the repository is still empty, you should track some files and do an initial commit use `git add` and `git commit` commands. First create and edit a file in the project directory.
 ```
@@ -47,3 +49,15 @@ At this point, you have a Git reposity with a tracked file and an initial commit
 ```
 git ls-files
 ```
+
+#### Other Git basics
+
+See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2) for more Git basics including:
+
+- getting a repository
+- recording changes
+- viewing commit history
+- undoing things
+- working with remotes
+- tagging
+- Git aliases
