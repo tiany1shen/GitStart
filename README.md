@@ -64,4 +64,23 @@ See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2) for more Git basic
 - tagging
 - Git aliases
 
+#### Frequently used commands
+
+```
+git init        # initialize a local repository
+git clone       # clone a remote repository
+
+git add         # add file into Staging Area
+git commit      # commit Staging Area to Repository
+
+git status      # show the working tree status
+git log         # show history of current branch
+git reset       # reset current HEAD
+
+git remote -v   # show all remote repository
+git fetch       # download all remote changes
+git pull        # git fetch + git merge
+git push        # upload local branch to remote
+```
+
 ### Git Branching
