@@ -65,3 +65,17 @@ See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2) for more Git basic
 - Git aliases
 
 ### Git Branching
+
+Git supports efficient branching operations. Here we create a new branch named `branching`, in which we edit content of this section. Meanwhile, we add some content into the previous section in the `master` branch. 
+
+#### Create a new branch 
+
+You can run `git branch` to create a new branch and run `git checkout` to switch between branches.
+```
+git branch branching
+git checkout branching
+```
+Or you can run `git branch` with the `-b` argument to do so at the same time.
+```
+git branch -b branching
+```
