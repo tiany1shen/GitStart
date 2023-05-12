@@ -85,7 +85,7 @@ git push        # upload local branch to remote
 
 ### Git Branching
 
-Git supports efficient branching operations. Here we create a new branch named `branching`, in which we edit content of this section. Meanwhile, we add some content into the previous section in the `master` branch. 
+Git supports efficient branching operations. Here we create a new branch named `branching`, in which we edit content of this section. Meanwhile, we add some content into the previous section in the `main` branch. 
 
 #### Create a new branch 
 
@@ -101,9 +101,9 @@ git branch -b branching
 
 #### Merge branch
 
-Now we have two different branch of this project: in `master` branch, this `README.md` file have a *Frequently used commands* section; while in `branching` branch, this file have new content about Git Branching. One can use `git merge` command to merge the `branching` branch into the `master` branch:
+Now we have two different branch of this project: in `main` branch, this `README.md` file have a *Frequently used commands* section; while in `branching` branch, this file have new content about Git Branching. One can use `git merge` command to merge the `branching` branch into the `main` branch:
 ```
-git checkout master
+git checkout main
 git merge branching
 ```
 Since we change different part of the `README.md` file, there is no merge conflict. Git will automatically create a merge commit. Now that your work is merged in, you can delete the `branching` branch by
