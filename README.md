@@ -54,7 +54,7 @@ git ls-files
 
 #### Other Git basics
 
-See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2) for more Git basics including:
+See [the Pro Git book Sec. 2](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) for more Git basics including:
 
 - getting a repository
 - recording changes
@@ -110,3 +110,45 @@ Since we change different part of the `README.md` file, there is no merge confli
 ```
 git branch -d branching
 ``` 
+
+## GitHub
+
+GitHub is the single largest host for Git repository. You can host your project source code on GitHub remotely. 
+
+### Upload Local Repository to GitHub
+
+Once you have create a new repository on GitHub, you can relate it to your local Git repository. See [the Pro Git book sec. 6.1](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration) for details of SSH access. 
+
+#### Clone remote repository
+
+Use `git clone` command to download remote repository to local directory, and the downloaded local repository is automatically related to the remote one.
+```
+git clone git@github.com:UserName/RepoName.git
+git remote
+```
+
+#### Relate a local Git repository to remote one
+
+Use `git remote add` command to relate local repository to remote one
+```
+git remote add origin git@github.com:UserName/RepoName.git
+git remote
+```
+
+#### Synchronize local and remote files
+
+Use `git pull` command to synchronize remote updates to local and `git push` command vise versa.
+```
+git pull origin main
+git push origin main
+```
+
+### Delete remote files
+
+You can delete a remote file while maintaining the local copy by
+```
+git pull origin main
+git rm -r --cached Dirname
+git commit -m "delete Dir"
+git push origin main
+```
